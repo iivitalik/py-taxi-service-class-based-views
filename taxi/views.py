@@ -49,4 +49,3 @@ class DriverDetailView(DetailView):
     model = Driver
     template_name = "taxi/driver_detail.html"
     context_object_name = "driver"
-    queryset = Driver.objects.select_related("manufacturer")
